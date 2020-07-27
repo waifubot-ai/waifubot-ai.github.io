@@ -8,7 +8,7 @@ versions = eval(versions)
 
 apps = {}
 
-with open('./test.json', 'r+') as test:
+with open('./ver.json', 'r+') as test:
 	local = test.read()
 	local = eval(local)
 
