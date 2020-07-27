@@ -1,5 +1,18 @@
 {
-	"arg1": "val1",
-	"0.1.0": "All",
-	"test": "testttt"
+
+	"install": {
+		"0.0.0": ["installator.py"]
+	},
+	"server": {
+
+	},
+	"client": {
+
+	},
+	"hub": {
+
+	},
+	"auth": {
+
+	}
 }
