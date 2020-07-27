@@ -10,7 +10,7 @@
 		"0.0.0": ["installator.py"]
 	},
 	"hub": {
-		"0.0.0": ["hub.py"]
+		"0.0.0": ["hub.file"]
 	},
 	"auth": {
 		"0.0.0": ["installator.py"]
