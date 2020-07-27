@@ -4,15 +4,15 @@
 		"0.0.0": ["installator.py"]
 	},
 	"server": {
-
+		"0.1.0": ["installator.py"]
 	},
 	"client": {
-
+		"0.0.0": ["installator.py"]
 	},
 	"hub": {
-
+		"0.0.0": ["installator.py"]
 	},
 	"auth": {
-
+		"0.0.0": ["installator.py"]
 	}
 }
