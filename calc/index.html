@@ -36,24 +36,72 @@
                 end = 100
             } else { end = Math.floor(control/chance*10000)/100 }
             document.getElementById("chance").innerText = `Chance: ${end}%`;
-            document.getElementById("reward").innerText = `Reward: ${reward}-${reward*2} Harem Points (Supporter reward: ${sup}-${sup*2} Harem Points)`;
+            document.getElementById("reward").innerText = `Reward: ${reward}-${reward*2} Harem Points\n(Supporter reward: ${sup}-${sup*2} Harem Points)`;
         }
     }
 </script>
+<style>
+    table {
+        border-spacing: 25px;
+    }
+    /*
+    .myButton {
+        background: #D12716;
+        background: -moz-linear-gradient(-45deg, #D12716 0%, #010605 100%);
+        background: -webkit-linear-gradient(-45deg, #D12716 0%, #010605 100%);
+        background: linear-gradient(135deg, #D12716 0%, #010605 100%);
+        font-size: 32px;
+        line-height: 32px;
+        padding: 12px;
+        border-radius: 10px;
+        color: aqua;
+    }
+    */
+</style>
 <hmtl>
     <head>
         <meta charset="UTF-8">
-        <title>WaifuBot Calculations</title>
-        <link rel="icon" href="assets/images/8af8a25f26be7605e8955687ad827fbb51182858r1-402-429v2-00-128x137.png">
+        <title>WaifuBot Dungeon Calculations</title>
+        <link rel="icon" href="assets/images/waifubot icon.jpg" type="image/icon type">
     </head>
     <body>
-        <p><h2>Attack</h2><input type="number" id="a"></p>
-        <p><h2>Defence</h2><input type="number" id="b"></p>
-        <p><h2>Luck</h2><input type="number" id="c"></p>
-        <p><h2>HP</h2><input type="number" id="d"></p>
-        <p><h2>Time</h2><input type="number" id="e"></p>
-        <p><button type="button" onclick="Calc()" name="ca" id='ca'>Calculate</button></p>
-        <h2 id="chance"></h2>
-        <h2 id="reward"></h2>
+        <table style="width:100%; height:100%;">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td><h2>Attack</h2></td><td><input type="number" id="a" value=1></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Defence</h2></td><td><input type="number" id="b" value=1></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Luck</h2></td><td><input type="number" id="c" value=1></td>
+                        </tr>
+                        <tr>
+                            <td><h2>HP</h2></td><td><input type="number" id="d" value=100></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Time</h2></td><td><input type="number" id="e" value=1></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <h2 id="chance"></h2>
+                        </tr>
+                        <tr>
+                            <h2 id="reward"></h2>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <center><button type="button" onclick="Calc()" class="myButton">Calculate</button></center>
+                </td>
+            </tr>
+        </table>
     </body>
 </hmtl>
